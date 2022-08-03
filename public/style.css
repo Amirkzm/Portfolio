@@ -1,0 +1,131 @@
+.sidebar {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+}
+
+.sidebar-enter-active,
+.sidebar-appear-active {
+  right: 0;
+}
+
+.sidebar-enter-done,
+.sidebar-appear-done {
+  right: 0;
+}
+
+.sidebar-exit {
+  right: 0;
+}
+
+.sidebar-exit-active {
+  right: -100%;
+}
+.sidebar-exit-done {
+  right: -100%;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: all 1s ease;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  .sidebar {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    width: 30vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .sidebar {
+    width: 20vw;
+  }
+}
+
+/* .sidebar-content-enter,
+.sidebar-content-appear {
+  opacity: 0;
+}
+
+.sidebar-content-enter-active,
+.sidebar-content-appear-active {
+  opacity: 1;
+}
+
+.sidebar-content-enter-done {
+  opacity: 1;
+}
+
+.sidebar-content-exit {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.sidebar-content-exit-active {
+  opacity: 0;
+}
+
+.sidebar-content-exit-done {
+  opacity: 0;
+} */
+
+/* -------------------------------------test-------------------------------------- */
+
+/* .container-transition {
+  background-color: chocolate;
+  width: 0;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+
+.container-transition-enter,
+.container-transition-appear {
+}
+
+.container-transition-enter-active,
+.container-transition-appear-active {
+  width: 15vw;
+}
+
+.container-transition-enter-done,
+.container-transition-appear-done {
+  width: 15vw;
+}
+
+.content-transition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s ease 1s;
+  opacity: 0;
+}
+
+.content-transition-enter {
+  opacity: 0;
+}
+
+.content-transition-enter-active {
+  opacity: 1;
+}
+
+.content-transition-enter-done {
+  opacity: 1;
+} */
