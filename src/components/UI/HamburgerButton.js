@@ -16,7 +16,7 @@ export const HamburgerButton = () => {
   return (
     <Fragment>
       <button
-        className="flex flex-col items-center w-max h-max m-4  z-10"
+        className="flex flex-col items-center w-max h-max m-4 mt-8  z-10"
         onClick={toggleSidebarHandler}
       >
         <span className={baseStyle + (sidebarCtx.isOpen && topLine)}></span>

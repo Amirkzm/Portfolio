@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      header: ["Oswald", "san-serif"],
+      header: ["Bebas Neue", "cursive"],
       body: ["Roboto Mono", "monospace"],
     },
     screens: {
