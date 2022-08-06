@@ -8,7 +8,7 @@ const Modal = ({ data }) => {
   const sidebarCtx = useContext(SidebarContext);
 
   const sidebarContentContainer =
-    "absolute top-[20%] right-[10%] text-white text-3xl z-10  ";
+    "absolute top-[20%] right-[25%] text-white text-3xl z-10  ";
 
   const animStr = (i) => `all 1s ease ${i * 0.5}s`;
 
