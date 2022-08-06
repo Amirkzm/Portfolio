@@ -27,7 +27,6 @@ export const Header = () => {
           <h1 className="md:hidden ml-4 " ref={headerSmallRef}>
             Portfolio
           </h1>
-
           <PortfolioIcn style={{ height: iconHeight }} />
         </div>
         <HamburgerButton />
