@@ -1,15 +1,9 @@
-import { useContext } from "react";
-import Sidebar from "./components/layout/Sidebar";
-import HamburgerButton from "./components/UI/HamburgerButton";
-import sidebarContext from "./context/Sidebar-context";
+import Header from "./components/layout/Header";
 
 function App() {
-  const sidebarCtx = useContext(sidebarContext);
-
   return (
     <div className="w-screen h-screen bg-gray-200">
-      <HamburgerButton />
-      <Sidebar />
+      <Header />
     </div>
   );
 }
