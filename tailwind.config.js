@@ -8,6 +8,7 @@ module.exports = {
     fontFamily: {
       header: ["Bebas Neue", "cursive"],
       body: ["Roboto Mono", "monospace"],
+      animationText: ["Alumni Sans", "Inline One"],
     },
     screens: {
       xs: "375px",
