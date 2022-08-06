@@ -14,7 +14,7 @@ export const Header = () => {
       headerLargeRef.current.clientHeight === 0
         ? headerSmallRef.current.clientHeight
         : headerLargeRef.current.clientHeight;
-    setIconHeight(height);
+    setIconHeight(height / 2);
   }, []);
 
   return (

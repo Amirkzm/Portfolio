@@ -1,10 +1,7 @@
 import mainImage from "../assets/main.png";
 import ITyped from "react-ityped";
-import { useEffect, useRef } from "react";
 
 const Homepage = () => {
-  const textRef = useRef();
-
   const strings = [
     "I use",
     "React JS",
@@ -13,12 +10,6 @@ const Homepage = () => {
     "full responsive websites!",
   ];
 
-  //   useEffect(() => {
-  //     init(textRef, {
-  //       showCursor: true,
-  //       strings: ["I use", "React", "and Create", "Reactive websites!"],
-  //     });
-  //   }, []);
   return (
     <div className="w-screen h-screen flex flex-col md:flex-row items-center justify-around ">
       <div className="w-[70vw] h-[40vh]  md:w-[40vw] md:h-[50vh] lg:w-[40vw] lg:h-[60vh] 2xl:w-[35vw] 2xl:h-[70vh] bg-red-700 rounded-full flex items-center justify-center overflow-hidden scale-125 ">
@@ -28,7 +19,7 @@ const Homepage = () => {
         <h3 className="">Hi there, I'm</h3>
         <h1 className="text-5xl">Amir Kazemi</h1>
         <ITyped
-          className="text-red-700 font-black text-2xl md:text-4xl 2xl:text-5xl"
+          className="text-red-700 font-black text-2xl md:text-4xl"
           showCursor={false}
           strings={strings}
           typeSpeed={200}
