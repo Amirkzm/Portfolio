@@ -1,7 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import ReactDOM from "react-dom";
 import SidebarContext from "../../context/Sidebar-context";
-import { data as sidebarContentData } from "../../utils/sidebar-data";
+import { data as sidebarContentData } from "../../utils/data";
 import { CSSTransition } from "react-transition-group";
 
 const Modal = ({ data }) => {
