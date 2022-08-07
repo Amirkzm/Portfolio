@@ -2,6 +2,7 @@
   background-color: black;
   position: fixed;
   top: 0;
+  z-index: 5;
   right: -100%;
   width: 100vw;
   height: 100vh;
@@ -54,78 +55,15 @@
   }
 }
 
-/* .sidebar-content-enter,
-.sidebar-content-appear {
-  opacity: 0;
+.card-image {
+  background-image: url("https://www.hessenhub.de/wp-content/uploads/2020/03/EPortfolio-Beitragsbild.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
 }
 
-.sidebar-content-enter-active,
-.sidebar-content-appear-active {
-  opacity: 1;
+.card-image:hover {
+  transform: scale(1.2);
+  filter: blur(2px);
 }
-
-.sidebar-content-enter-done {
-  opacity: 1;
-}
-
-.sidebar-content-exit {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  transition: all 0.5s ease;
-  opacity: 1;
-}
-
-.sidebar-content-exit-active {
-  opacity: 0;
-}
-
-.sidebar-content-exit-done {
-  opacity: 0;
-} */
-
-/* -------------------------------------test-------------------------------------- */
-
-/* .container-transition {
-  background-color: chocolate;
-  width: 0;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 1s ease;
-}
-
-.container-transition-enter,
-.container-transition-appear {
-}
-
-.container-transition-enter-active,
-.container-transition-appear-active {
-  width: 15vw;
-}
-
-.container-transition-enter-done,
-.container-transition-appear-done {
-  width: 15vw;
-}
-
-.content-transition {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 1s ease 1s;
-  opacity: 0;
-}
-
-.content-transition-enter {
-  opacity: 0;
-}
-
-.content-transition-enter-active {
-  opacity: 1;
-}
-
-.content-transition-enter-done {
-  opacity: 1;
-} */
