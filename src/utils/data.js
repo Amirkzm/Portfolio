@@ -33,3 +33,30 @@ export const data = [
     path: "/contact",
   },
 ];
+
+export const portfolioData = [
+  {
+    title: "NetFlix movie",
+    path: "",
+  },
+  {
+    title: "Facebook UI",
+    path: "",
+  },
+  {
+    title: "NetFlix movie",
+    path: "",
+  },
+  {
+    title: "NetFlix movie",
+    path: "",
+  },
+  {
+    title: "NetFlix movie",
+    path: "",
+  },
+  {
+    title: "NetFlix movie",
+    path: "",
+  },
+];
