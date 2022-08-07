@@ -63,7 +63,7 @@
   transition: all 0.5s;
 }
 
-.card-image:hover {
+/* .card-image:hover {
   transform: scale(1.2);
   filter: blur(2px);
-}
+} */
