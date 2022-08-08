@@ -1,4 +1,5 @@
 import Header from "./components/layout/Header";
+import About from "./pages/About";
 import Homepage from "./pages/Homepage";
 import Portfolio from "./pages/PortfolioPage";
 
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Homepage />
       <Portfolio />
+      <About />
     </div>
   );
 }
