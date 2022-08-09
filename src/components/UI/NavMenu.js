@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NavItem = (props) => {
+const NavMenuItem = (props) => {
   //   const [isActive, setIsActive] = useState(false);
   const { navTitle, isActive, OnActivateTab } = props;
   const onNavigateTabHandler = () => {
@@ -27,26 +27,32 @@ const initialMenuData = [
 ];
 
 const NavMenu = (props) => {
-  const [menuData, setMenuData] = useState(initialMenuData);
+  const [menuData, setMenuData] = useState(props.menuData);
 
   const makeActiveTabHandler = (title) => {
     let newMenuData = [];
+    let componentToRender;
     for (const item of menuData) {
       if (item.title === title) {
-        newMenuData.push({ title: title, isActive: true });
+        newMenuData.push({ ...item, isActive: true });
+        componentToRender = item.comp;
       } else {
-        newMenuData.push({ title: item.title, isActive: false });
+        newMenuData.push({
+          ...item,
+          isActive: false,
+        });
       }
     }
     setMenuData(newMenuData);
+    props.onTabChange(componentToRender);
   };
 
   return (
-    <div className="w-[50vw] h-[50vh] mt-12 bg-slate mx-auto">
+    <div className="w-[70vw] h-[50vh] mt-12 bg-slate mx-auto">
       <div className="flex justify-center">
         {menuData.map((item, index) => {
           return (
-            <NavItem
+            <NavMenuItem
               key={index}
               navTitle={item.title}
               OnActivateTab={makeActiveTabHandler}
@@ -56,7 +62,7 @@ const NavMenu = (props) => {
         })}
       </div>
       <div className="w-full h-0.5 bg-gray-700"></div>
-      {props.children}
+      <div className="p-4 h-[50vh]">{props.children}</div>
     </div>
   );
 };

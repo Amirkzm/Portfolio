@@ -9,6 +9,7 @@ module.exports = {
       header: ["Bebas Neue", "cursive"],
       body: ["Roboto Mono", "monospace"],
       animationText: ["Alumni Sans", "Inline One"],
+      about: ["Alumni Sans Inline One", "cursive"],
     },
     screens: {
       xs: "375px",
