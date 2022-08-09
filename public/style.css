@@ -62,3 +62,19 @@
   background-size: cover;
   transition: all 0.5s;
 }
+/*----------------------------------------------*/
+.abouts {
+  position: absolute;
+  top: 15%;
+  z-index: 5;
+  right: -100%;
+  width: 40vw;
+  height: 50vh;
+  transition: all 1s;
+  opacity: 0;
+}
+
+.active {
+  right: 30%;
+  opacity: 1;
+}

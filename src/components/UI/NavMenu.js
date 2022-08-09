@@ -44,7 +44,7 @@ const NavMenu = (props) => {
       }
     }
     setMenuData(newMenuData);
-    props.onTabChange(componentToRender);
+    props.onTabChange(componentToRender, newMenuData);
   };
 
   return (

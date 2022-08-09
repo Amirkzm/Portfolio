@@ -10,6 +10,7 @@ module.exports = {
       body: ["Roboto Mono", "monospace"],
       animationText: ["Alumni Sans", "Inline One"],
       about: ["Alumni Sans Inline One", "cursive"],
+      formal: ["Poppins", "Arial", "sans-serif"],
     },
     screens: {
       xs: "375px",

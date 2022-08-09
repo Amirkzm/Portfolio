@@ -12,17 +12,27 @@ const initialMenuData = [
 
 const About = () => {
   const [activeComp, setActiveComp] = useState(<Bio />);
-  const showActiveContentHandler = (component) => {
+  const [tabChanged, setTabChanged] = useState(false);
+  const [menuData, setMenuData] = useState(initialMenuData);
+
+  const showActiveContentHandler = (component, newMenuData) => {
     setActiveComp(component);
+    setMenuData(newMenuData);
   };
 
   return (
-    <section>
+    <section className="relative">
       <NavMenu
         menuData={initialMenuData}
         onTabChange={showActiveContentHandler}
       >
-        {activeComp}
+        {menuData.map((item) => {
+          return (
+            <div className={item.isActive ? "active abouts" : "abouts"}>
+              {item.comp}
+            </div>
+          );
+        })}
       </NavMenu>
     </section>
   );
