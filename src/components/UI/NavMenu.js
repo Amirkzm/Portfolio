@@ -43,7 +43,7 @@ const NavMenu = (props) => {
 
   return (
     <div className="w-[50vw] h-[50vh] mt-12 bg-slate mx-auto">
-      <div className="flex">
+      <div className="flex justify-center">
         {menuData.map((item, index) => {
           return (
             <NavItem
