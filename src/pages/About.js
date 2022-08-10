@@ -16,7 +16,7 @@ const About = () => {
   };
 
   return (
-    <section className="relative mt-16">
+    <section className="relative mt-16" id="about">
       <h1 className="text-center font-black font-header text-red-600 text-5xl">
         About
       </h1>
@@ -26,7 +26,10 @@ const About = () => {
       >
         {menuData.map((item) => {
           return (
-            <div className={item.isActive ? "active abouts" : "abouts"}>
+            <div
+              className={item.isActive ? "active abouts" : "abouts"}
+              key={item.title}
+            >
               {item.comp}
             </div>
           );

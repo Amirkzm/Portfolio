@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <section className="mt-80 md:mt-10 ">
+    <section className="mt-80 md:mt-10 " id="contact">
       <h1 className="text-center font-black font-header text-red-600 text-5xl mb-8">
         Contact me
       </h1>
