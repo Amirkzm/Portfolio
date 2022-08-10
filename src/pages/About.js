@@ -7,16 +7,12 @@ import SocialMedias from "../components/about/SocialMedias";
 const initialMenuData = [
   { title: "About", isActive: true, comp: <Bio /> },
   { title: "Skills", isActive: false, comp: <Skills /> },
-  { title: "Social medias", isActive: false, comp: <SocialMedias /> },
 ];
 
 const About = () => {
-  const [activeComp, setActiveComp] = useState(<Bio />);
-  const [tabChanged, setTabChanged] = useState(false);
   const [menuData, setMenuData] = useState(initialMenuData);
 
-  const showActiveContentHandler = (component, newMenuData) => {
-    setActiveComp(component);
+  const showActiveContentHandler = (newMenuData) => {
     setMenuData(newMenuData);
   };
 

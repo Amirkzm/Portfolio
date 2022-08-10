@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const NavMenuItem = (props) => {
-  //   const [isActive, setIsActive] = useState(false);
   const { navTitle, isActive, OnActivateTab } = props;
   const onNavigateTabHandler = () => {
     OnActivateTab(navTitle);
@@ -20,22 +19,14 @@ const NavMenuItem = (props) => {
   );
 };
 
-const initialMenuData = [
-  { title: "About", isActive: true },
-  { title: "Skills", isActive: false },
-  { title: "Social medias", isActive: false },
-];
-
 const NavMenu = (props) => {
   const [menuData, setMenuData] = useState(props.menuData);
 
   const makeActiveTabHandler = (title) => {
     let newMenuData = [];
-    let componentToRender;
     for (const item of menuData) {
       if (item.title === title) {
         newMenuData.push({ ...item, isActive: true });
-        componentToRender = item.comp;
       } else {
         newMenuData.push({
           ...item,
@@ -44,7 +35,7 @@ const NavMenu = (props) => {
       }
     }
     setMenuData(newMenuData);
-    props.onTabChange(componentToRender, newMenuData);
+    props.onTabChange(newMenuData);
   };
 
   return (

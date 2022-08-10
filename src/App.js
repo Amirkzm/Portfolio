@@ -5,7 +5,7 @@ import Portfolio from "./pages/PortfolioPage";
 
 function App() {
   return (
-    <div className="w-screen h-screen bg-white">
+    <div className="w-screen h-screen bg-white min-w-[380px]">
       <Header />
       <Homepage />
       <Portfolio />
