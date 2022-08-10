@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="w-screen h-screen bg-white overflow-x-hidden min-w-[380px]">
       <Header />
-      <section className="h-[calc(100vh_-_72px)] subsection">
+      <section className="h-[calc(100vh_-_72px)] subsection snap-y snap-mandatory overflow-scroll">
         <Homepage />
         <Portfolio />
         <About />

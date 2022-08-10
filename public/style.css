@@ -80,7 +80,13 @@
   opacity: 1;
 }
 
+.subsection {
+  scroll-snap-type: y mandatory;
+}
+
 .subsection > * {
   width: 100vw;
   height: calc(100vh - 72px);
+  scroll-snap-align: start;
+  background-color: antiquewhite;
 }
