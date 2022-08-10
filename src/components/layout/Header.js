@@ -18,7 +18,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header>
+    <header className="h-[72px]">
       <nav className="flex justify-between items-center mb-8">
         <div className="flex items-center gap-4 text-3xl font-black font-header h-[96px]">
           <h1 className="xs:hidden md:block ml-4" ref={headerLargeRef}>

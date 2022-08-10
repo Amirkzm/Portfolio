@@ -8,10 +8,12 @@ function App() {
   return (
     <div className="w-screen h-screen bg-white overflow-x-hidden min-w-[380px]">
       <Header />
-      <Homepage />
-      <Portfolio />
-      <About />
-      <Contact />
+      <section className="h-[calc(100vh_-_72px)] subsection">
+        <Homepage />
+        <Portfolio />
+        <About />
+        <Contact />
+      </section>
     </div>
   );
 }
