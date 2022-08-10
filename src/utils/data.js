@@ -10,27 +10,27 @@ export const data = [
   {
     title: "HOME",
     icon: <MdHome />,
-    path: "/home",
+    path: "#homepage",
   },
   {
     title: "PROJECT",
     icon: <AiFillProject />,
-    path: "/projects",
+    path: "#portfolio",
   },
   {
     title: "BLOG",
     icon: <MdTextSnippet />,
-    path: "/blog",
+    path: "#blog",
   },
   {
     title: "ABOUT ME",
     icon: <MdPerson />,
-    path: "/about",
+    path: "#about",
   },
   {
     title: "CONTACT",
     icon: <MdContactSupport />,
-    path: "/contact",
+    path: "#contact",
   },
 ];
 

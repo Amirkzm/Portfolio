@@ -28,6 +28,7 @@ const Modal = ({ data }) => {
                   style={{
                     transition: sidebarCtx.isOpen ? animStr(index) : "",
                   }}
+                  onClick={sidebarCtx.toggleSidebar}
                 >
                   <span>{item.icon}</span>
                   <a href={item.path} className="">
