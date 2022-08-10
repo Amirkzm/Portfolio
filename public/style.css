@@ -75,6 +75,7 @@
 }
 
 .active {
-  right: 30%;
+  right: 50%;
+  transform: translateX(30%);
   opacity: 1;
 }

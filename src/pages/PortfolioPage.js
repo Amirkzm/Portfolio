@@ -4,7 +4,7 @@ import { portfolioData } from "../utils/data";
 
 const Portfolio = () => {
   return (
-    <div>
+    <div className="mt-16">
       <h1 className="text-center font-black text-red-600 font-header text-5xl">
         Completed Projects
       </h1>
