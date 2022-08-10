@@ -53,7 +53,7 @@ const NavMenu = (props) => {
         })}
       </div>
       <div className="w-full h-0.5 bg-gray-700"></div>
-      <div className="p-4 h-[50vh]">{props.children}</div>
+      <div className="p-4 h-[50vh] ">{props.children}</div>
     </div>
   );
 };

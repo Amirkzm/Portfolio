@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import NavMenu from "../components/UI/NavMenu";
 import Bio from "../components/about/Bio";
 import Skills from "../components/about/Skills";
-import SocialMedias from "../components/about/SocialMedias";
 
 const initialMenuData = [
   { title: "About", isActive: true, comp: <Bio /> },
