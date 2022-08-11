@@ -12,13 +12,17 @@ const Homepage = () => {
 
   return (
     <div
-      className="w-screen flex flex-col md:flex-row items-center justify-around "
+      className="w-screen flex flex-col items-center justify-between md:flex-row "
       id="homepage"
     >
-      <div className="w-[70vw] h-[40vh]  md:w-[40vw] md:h-[50vh] lg:w-[40vw] lg:h-[60vh] 2xl:w-[35vw] 2xl:h-[70vh] bg-red-700 rounded-full flex items-center justify-center overflow-hidden scale-125 ">
-        <img src={mainImage} alt="pesonal" className="scale-125" />
+      <div className="flex-[0.5] w-full bg-red-500 self-center flex justify-center items-center clip-circle h-[80%] ">
+        <img
+          src={mainImage}
+          alt="pesonal"
+          className="scale-125 translate-y-6"
+        />
       </div>
-      <div className="text-2xl font-black font-body w-[35vw] h-[10vh] self-center">
+      <div className="text-2xl font-black font-body flex-[0.5] self-center">
         <h3 className="">Hi there, I'm</h3>
         <h1 className="text-5xl">Amir Kazemi</h1>
         <ITyped
