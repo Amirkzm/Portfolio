@@ -16,7 +16,7 @@ const About = () => {
   };
 
   return (
-    <section className="relative mt-16" id="about">
+    <section className="relative mt-8" id="about">
       <h1 className="text-center font-black font-header text-red-600 text-5xl">
         About
       </h1>
