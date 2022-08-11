@@ -89,3 +89,9 @@
   height: calc(100vh - 72px);
   scroll-snap-align: start;
 }
+
+@media only screen and (max-width: 768px) {
+  #portfolio {
+    height: max-content;
+  }
+}
