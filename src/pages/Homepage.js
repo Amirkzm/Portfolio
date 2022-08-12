@@ -12,7 +12,7 @@ const Homepage = () => {
 
   return (
     <div
-      className="w-screen flex flex-col items-center justify-between md:flex-row "
+      className="w-screen flex flex-col items-center justify-between md:flex-row gap-16"
       id="homepage"
     >
       <div className="flex-[0.5] w-full bg-red-500 self-center flex justify-center items-center clip-circle h-[80%] ">
@@ -22,7 +22,7 @@ const Homepage = () => {
           className="scale-125 translate-y-6"
         />
       </div>
-      <div className="text-2xl font-black font-body flex-[0.5] self-center">
+      <div className="text-2xl font-black font-body flex-[0.5] self-center md:ml-20">
         <h3 className="">Hi there, I'm</h3>
         <h1 className="text-5xl">Amir Kazemi</h1>
         <ITyped
