@@ -10,7 +10,7 @@ const Modal = ({ data }) => {
   const sidebarContentContainer =
     "absolute top-[20%] right-[25%] text-white text-3xl z-10  ";
 
-  const animStr = (i) => `all 1s ease ${i * 0.5}s`;
+  const animStr = (i) => `all 0.5s ease ${i * 0.1}s`;
 
   return (
     <CSSTransition in={sidebarCtx.isOpen} timeout={100} classNames={"sidebar"}>
@@ -22,7 +22,7 @@ const Modal = ({ data }) => {
                 <li
                   key={item.title}
                   className={
-                    "flex items-center gap-4 opacity-0 scale-0" +
+                    "flex items-center gap-4 opacity-0 scale-0 hover:faster-delay hover:text-orange-600" +
                     (sidebarCtx.isOpen && " !opacity-100 !scale-100")
                   }
                   style={{

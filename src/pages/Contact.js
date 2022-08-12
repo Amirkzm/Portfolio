@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <section className="mt-80 md:mt-10 " id="contact">
+    <section className="mt-10 w-screen" id="contact">
       <h1 className="text-center font-black font-header text-red-600 text-5xl mb-8">
         Contact me
       </h1>
@@ -13,9 +13,9 @@ const Contact = () => {
         <img
           src={contactImg}
           alt="contact"
-          className="w-[300px] h-[30vh] clip-circle"
+          className="flex-[0.5] h-[30vh] clip-circle"
         />
-        <div className="flex  gap-8 mt-16 text-2xl md:flex-col md:items-center">
+        <div className="flex-[0.5] flex  gap-8 mt-16 text-2xl md:flex-col md:items-center">
           <div className="flex items-center gap-2">
             <FaLinkedin />
             <a href="https://www.linkedin.com/in/amir-kazemi-33667045/">

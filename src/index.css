@@ -6,6 +6,9 @@
   .clip-circle {
     clip-path: circle();
   }
+  .faster-delay {
+    transition: all 0.5s ease;
+  }
 }
 
 body {
