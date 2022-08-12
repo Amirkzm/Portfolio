@@ -22,7 +22,7 @@ const Modal = ({ data }) => {
                 <li
                   key={item.title}
                   className={
-                    "flex items-center gap-4 opacity-0 scale-0 hover:faster-delay hover:text-orange-600" +
+                    "flex items-center gap-4 opacity-0 scale-0 hover:text-orange-600" +
                     (sidebarCtx.isOpen && " !opacity-100 !scale-100")
                   }
                   style={{
