@@ -10,7 +10,7 @@ const NavMenuItem = (props) => {
     <button
       onClick={onNavigateTabHandler}
       className={
-        "p-4 hover:border-b-2 hover:border-black font-body font-bold text-2xl" +
+        "p-4 hover:border-b-2 hover:border-black font-body font-bold text-2xl dark:border-white" +
         (isActive && " border-b-2 border-black")
       }
     >
@@ -39,7 +39,7 @@ const NavMenu = (props) => {
   };
 
   return (
-    <div className="w-[70vw] h-[50vh] mt-12 bg-slate mx-auto overflow-hidden">
+    <div className="w-[70vw] h-[50vh] mt-12 bg-slate mx-auto overflow-hidden dark:text-white">
       <div className="flex justify-center">
         {menuData.map((item, index) => {
           return (
@@ -52,7 +52,7 @@ const NavMenu = (props) => {
           );
         })}
       </div>
-      <div className="w-full h-0.5 bg-gray-700"></div>
+      <div className="w-full h-0.5 bg-gray-700 dark:bg-white"></div>
       <div className="p-4 h-[50vh] ">{props.children}</div>
     </div>
   );

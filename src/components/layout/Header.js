@@ -20,10 +20,17 @@ export const Header = () => {
     <header className="h-[72px] relative">
       <nav className="flex justify-between items-center mb-8">
         <div className="flex items-center gap-4 text-3xl font-black font-header h-[96px]">
-          <a className="ml-4 text-2xl" href="#homepage" ref={headerRef}>
+          <a
+            className="ml-4 text-2xl dark:text-white"
+            href="#homepage"
+            ref={headerRef}
+          >
             Amir.
           </a>
-          <PortfolioIcn style={{ height: iconHeight }} />
+          <PortfolioIcn
+            fill={darkCtx.isDarkMode ? "#fff" : "000"}
+            style={{ height: iconHeight }}
+          />
           <button
             className="absolute top-[50%] right-[5%] translate-y-[50%]"
             onClick={darkCtx.changeDarkMode}

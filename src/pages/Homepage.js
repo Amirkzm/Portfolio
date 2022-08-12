@@ -22,7 +22,7 @@ const Homepage = () => {
           className="scale-125 translate-y-6"
         />
       </div>
-      <div className="text-2xl font-black font-body flex-[0.5] self-center md:ml-20">
+      <div className="text-2xl font-black font-body flex-[0.5] self-center md:ml-20 dark:text-white">
         <h3 className="">Hi there, I'm</h3>
         <h1 className="text-5xl">Amir Kazemi</h1>
         <ITyped

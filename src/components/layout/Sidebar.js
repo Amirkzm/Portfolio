@@ -14,7 +14,7 @@ const Modal = ({ data }) => {
 
   return (
     <CSSTransition in={sidebarCtx.isOpen} timeout={100} classNames={"sidebar"}>
-      <div className="sidebar">
+      <div className="sidebar dark:bg-white">
         <div className={sidebarContentContainer}>
           <ul className="sidebar-content">
             {sidebarContentData.map((item, index) => {
@@ -22,7 +22,7 @@ const Modal = ({ data }) => {
                 <li
                   key={item.title}
                   className={
-                    "flex items-center gap-4 opacity-0 scale-0 hover:text-orange-600" +
+                    "flex items-center gap-4 opacity-0 scale-0 hover:!text-orange-600 dark:text-black " +
                     (sidebarCtx.isOpen && " !opacity-100 !scale-100")
                   }
                   style={{
